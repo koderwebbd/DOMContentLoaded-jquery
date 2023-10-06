@@ -1,0 +1,24 @@
+<script defer>
+  window.addEventListener('DOMContentLoaded', function() {
+        (function($) {
+
+            $('.tabs-details .text-group .heading-wrap').click(function() {
+                console.log('ready')
+                $(this).next().slideToggle();
+                $( this ).find('svg').toggleClass( "up" );
+              });
+              
+            $('.click_learn_more').click(function(event) {
+              /* Act on the event */
+              $(this).toggleClass('hide');
+              $('.tab_content').removeClass('small_height');
+              // click_learn_more
+              // tab_content  
+            });
+            $("#toTop").click(function () {
+              $("html, body").animate({scrollTop: 0}, 1000);
+            });
+
+        })(jQuery);
+    });
+</script>
